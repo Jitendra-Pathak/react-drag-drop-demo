@@ -2,7 +2,6 @@ import React from "react";
 import SimpleListDragDrop from "simplelistdragdrop";
 import { SIDEBAR_DATA, DRAGLIST_DATA, TABS_DATA } from './constants';
 import './App.css';
-import Header from "./components/header";
 
 function App() {
   const getDragRowAction = (data) => {
@@ -30,8 +29,6 @@ function App() {
 
   return (
     <div className='container'>
-      HELLO REACT
-      <Header />
       <div className='sidebar'>
         <SimpleListDragDrop
           containerId='sidebarDropArea'
@@ -42,7 +39,7 @@ function App() {
           onDragEndCallback={onDragEnd}
         />
       </div>
-      {/* 
+      
 
       <div className='content'>
         <h1 className="demoPageTitle">Drag and Drop Example </h1>
@@ -90,7 +87,7 @@ function App() {
           />
         </div>
 
-      </div> */}
+      </div>
     </div>
   );
 }

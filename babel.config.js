@@ -1,8 +1,9 @@
 module.exports = {
-    overrides: [
-        {
-            test: ["./node_modules/simplelistdragdrop"],
-            presets: ["@babel/preset-react"]
-        }
+    "presets": [
+      "@babel/preset-react",
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "@babel/plugin-transform-react-jsx"
     ]
 }
