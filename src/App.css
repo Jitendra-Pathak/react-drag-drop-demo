@@ -1,70 +1,51 @@
-html,
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-li {
+html, body, h1, h2, h3, h4, h5, h6, p, ul, li {
   margin: 0;
   padding: 0;
   list-style-type: none;
   box-sizing: border-box;
   border: none;
 }
-
 .container {
   width: 100%;
   box-sizing: border-box;
   display: flex;
   min-height: 100vh;
 }
-
-.sidebar {
+.container .sidebar {
   width: 250px;
   box-shadow: 0px 0px 8px 0px #95a3a7b8;
 }
-
-.content {
+.container .content {
   width: calc(100% - 250px);
   padding: 20px;
+  padding-top: 8px;
 }
-
-.wrapper {
+.container .wrapper {
   background-color: #fff;
   box-shadow: 1px 1px 8px 0 #95a3a7b8;
   margin-bottom: 50px;
 }
-
-.vertical .listContainer {
+.container .wrapper.vertical .listContainer {
   max-height: 350px;
   overflow: auto;
 }
-
-.horizontal  .listContainer {
+.container .wrapper.horizontal .listContainer {
   display: flex;
   padding: 15px;
   justify-content: space-evenly;
 }
-
-.demoPageTitle {
+.container .demoPageTitle {
   margin-bottom: 20px;
 }
-
-.customListItem {
+.container .customListItem {
   padding: 15px 40px;
   background: #fff;
   box-shadow: 1px 2px 8px 2px #eee;
 }
-
-.customTemplate {
+.container .customTemplate {
   display: flex;
 }
-
-.btn {
+.container .customTemplate .btn {
   margin-left: auto;
   padding: 4px 8px;
   background-color: #eee;
@@ -72,9 +53,41 @@ li {
   font-size: 14px;
   cursor: pointer;
 }
-
-.exptext {
+.container .exptext {
   padding: 4px 4px 20px;
   line-height: 20px;
   letter-spacing: 0.5px;
+}
+.container .exptext p {
+  padding-top: 8px;
+}
+.headerContainer {
+  background-color: #097276;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+.headerContainer * {
+  box-sizing: border-box;
+}
+.headerContainer h3 {
+  color: #fff;
+}
+.headerContainer a {
+  text-decoration: none;
+  padding: 0 16px;
+  color: #fff;
+  cursor: pointer;
+}
+.headerContainer a:hover {
+  text-decoration: underline;
+}
+
+.sidebar .label {
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #fff;
 }

@@ -48,7 +48,7 @@
     "resolve-url-loader": "^4.0.0",
     "sass-loader": "^12.3.0",
     "semver": "^7.3.5",
-    "simplelistdragdrop": "git+http://github.com/Jitendra-Pathak/simplelistdragdrop.git#main",
+    "listdragdrop": "git+http://github.com/Jitendra-Pathak/listdragdrop.git#main",
     "react-new-repo": "git+http://github.com/Jitendra-Pathak/react-repo.git#main",
     "source-map-loader": "^3.0.0",
     "style-loader": "^3.3.1",
